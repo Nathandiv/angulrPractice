@@ -82,7 +82,7 @@ import { RouterOutlet } from '@angular/router';
   // template:`Hello Universe`,
   template:`
  
- 
+  <div [contentEditable]="isEditable"></div>
   `,
   styles:`
   :host{
@@ -96,5 +96,5 @@ import { RouterOutlet } from '@angular/router';
 })
 export class AppComponent {
 
-  
+  isEditable = true;
 }
