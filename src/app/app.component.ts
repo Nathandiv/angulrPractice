@@ -104,6 +104,11 @@ import { RouterOutlet } from '@angular/router';
   // template:`Hello Universe`,
   template:`
  
+  <section (mouseover)="onMouseOver()">
+  There's a secret message for you, hover to reveal:
+  {{ message }}
+</section>
+
   `,
   styles:`
   :host{
