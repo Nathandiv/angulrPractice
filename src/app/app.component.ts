@@ -77,12 +77,33 @@ import { RouterOutlet } from '@angular/router';
 //   ];
 // }
 
+// @Component({
+//   selector: 'app-root',
+//   // template:`Hello Universe`,
+//   template:`
+ 
+//   <div [contentEditable]="isEditable"></div>
+//   `,
+//   styles:`
+//   :host{
+//     color:#a144eb;
+//   }
+//   `,
+//   standalone: true,
+//   imports: [RouterOutlet,],
+//   // templateUrl: './app.component.html',
+//   // styleUrl: './app.component.css'
+// })
+// export class AppComponent {
+
+//   isEditable = true;
+// }
+
 @Component({
   selector: 'app-root',
   // template:`Hello Universe`,
   template:`
  
-  <div [contentEditable]="isEditable"></div>
   `,
   styles:`
   :host{
@@ -96,5 +117,10 @@ import { RouterOutlet } from '@angular/router';
 })
 export class AppComponent {
 
-  isEditable = true;
+  message = '';
+
+  onMouseOver() {
+    this.message = 'Way to go 🚀';
+  }
+
 }
