@@ -52,7 +52,9 @@ import { RouterOutlet } from '@angular/router';
   // template:`Hello Universe`,
   template:`
  
-
+  @for(user of users; track user.id) {
+    <p>{{ user.name }}</p>
+    }
 
   `,
   styles:`
