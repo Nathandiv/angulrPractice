@@ -4,7 +4,7 @@ import { RouterOutlet } from '@angular/router';
 @Component({
   selector: 'app-root',
   // template:`Hello Universe`,
-  template:`Hello {{ city }}`,
+  template:`Hello {{ city }}, {{ 1 + 1 }}`,
   styles:`
   :host{
     color:#a144eb;
